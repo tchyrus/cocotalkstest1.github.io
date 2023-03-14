@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Journal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="logo"><img src="../LOGO_COCOTALKS.png"></a>
+      <ul class="nav-links">
+        <li><a href="../MOODTRACKER/index.html">Mood Tracker</a></li>
+        <li><a href="../JOURNAL/index.html">Journal</a></li>
+        <li><a href="../TESTNEWNEWLOGIN/profile.html" style="color: #e0501b;"><strong>MyProfile</strong></a></li>
+        <li><a href="../TESTNEWNEWLOGIN/login.html" style="color: #000000;">Log out</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="form-container">
+      <h2><strong> Journal</strong></h2>
+      <form>
+        <div>
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title">
+        </div>
+        <div>
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div>
+          <label for="content">Content</label>
+          <textarea id="content" name="content"></textarea>
+        </div>
+        <button id="submit-btn">Add Journal</button>
+      </form>
+    </div>
+    <div class="entries-container" id="entries-container">
+      <!-- journal entries will be added here dynamically -->
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

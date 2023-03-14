@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+    <div class="container">
+      <a href="../index.html" class="logo"><img src="../LOGO_COCOTALKS.png"></a>
+      <h1>Signup </h1>
+      <form id="signup-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="nationality">Nationality</label>
+        <input type="text" id="nationality" name="nationality" required>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="contact">Contact No.</label>
+        <input type="tel" id="contact" name="contact" required>
+
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio"></textarea>
+
+        <button type="submit">Signup</button>
+        <p> Already have an account? <a class="button" href="login.html">Login</a></p> 
+
+      </form>
+    </div>
+  
+    <script src="signup.js"></script>
+    <script>
+        window.onload = function() {
+          document.querySelector('.page-container').classList.add('show');
+        }
+      </script>
+      <script>
+        window.onload = function() {
+          document.querySelector('.page-container').classList.add('show');
+          document.querySelector('.button').href = 'signup.html';
+        }
+      </script>
+      
+  </body>
+</html>
